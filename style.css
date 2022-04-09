@@ -1,0 +1,219 @@
+/*
+.navbar{
+    background-image: linear-gradient(-90deg, #f73b3b, #ffffff);
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Croissant+One&family=Homemade+Apple&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+ font-family: 'Pacifico';
+ padding-left:2rem;
+ font-size:25px!important;
+}
+
+body{
+    padding-top: 90px;
+}
+
+.nav-carousel-item{
+    font-size:medium;
+    margin: 2.5px;
+}
+ .navbar-nav .nav-link:active,
+ .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #b30000;
+    padding: 6px 0;
+}
+.navbar{
+    box-shadow: 0px 8px 8px -7px rgba(0,0,0,.5);
+    background-color:whitesmoke;
+}
+
+/*
+.home .content{
+    height:450px;
+    background-color::#b30000;
+
+}
+.home .content h1{
+    font-family: 'Pacifico',sans-serif;
+    padding-top:150px;
+    padding-left:1rem;
+    text-align: center;
+    font-size:2.5rem;
+}
+*/
+.about{
+    background:#eee;
+  }
+  
+  .about .content .box{
+    margin:3rem 0;
+  }
+  
+  .about .content .box a{
+    font-size: 1.3rem;
+    color:#2E2C2C;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+  }
+  
+  .about .content h3 a:hover{
+    color:#b30000;
+  }
+  
+  .about .content .box h3 i{
+    padding: 0 1rem;
+    color:#b30000;
+    margin-right:2.0rem;
+  }
+  
+  .about .content .box p{
+    font-size: 1rem;
+    padding-left: 6rem;
+    color:#424242;
+  }
+  
+    .home .container  img {
+      display: block;
+
+    }
+    
+    .home .container{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .home .container .caption {
+      font-family:'Cedarville Cursive';
+      position: absolute;
+      z-index: 1;
+      margin: 0 auto;
+      left:0;
+      right:20%;
+      text-align: left;
+      top: 30%; /* Adjust this value to move the positioned div up and down*/
+      width: 40%; 
+      color:whitesmoke;
+    }
+
+
+
+.review{
+  background:url(Icons/testimonial-edit.jpg) no-repeat;
+  background-size: cover;
+}
+
+.review .container{
+  height:450px;
+}
+
+.review .heading{
+  color:#b30000;
+  text-align:center;
+  font-family: 'Pacifico';
+  font-size:3rem;
+  padding-top: 3rem;
+}
+
+.review .container .box-container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+ 
+}
+
+.review .container .box-container .box{
+  background:#fff;
+  width:18rem;
+  height:10rem;
+  margin:3.5rem 1rem;
+  padding:1.5rem;
+  position:relative;
+  border-radius: 15px 15px 15px 0px;
+}
+
+.review .container .box-container .box img{
+  position:absolute;
+  bottom: -4.7rem;left: -0.2rem;
+  height:3rem;
+  width:3rem;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+.review .container .box-container .box p{
+  font-size: 1.2rem;
+  color:#161414;
+  font-family: 'Roboto';
+}
+
+.review .container .box-container .box h3{
+  display:block;
+  text-align:right;
+  font-size:1rem;
+  color:#b30000;
+  font-family: 'Pacifico';
+}
+
+.review .container .box-container .box::before{
+  content: '';
+  position:absolute;
+  bottom: -1rem;
+  left:0.45rem;
+  height:2rem;
+  width:2rem;
+  background:#fff;
+  transform:rotate(45deg);
+}
+.counter{
+  background:#eee;
+}
+.counter .box-container{
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding:2rem 0;
+}
+
+.counter .box-container .box{
+  margin:2rem 5rem;
+  text-align:center;
+  width:120px;
+}
+.counter .box-container .box i{
+  color:#b30000;
+  font-size:2.5rem;
+}
+.counter .box-container .box span{
+  color:black;
+  font-size:1.8rem;
+  display:block;
+  padding:1rem 0;
+}
+.counter .box-container .box h5{
+  font-family:'Roboto';
+}
+
+.registration .heading h3{
+  color:#b30000;
+  text-align:center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:3rem;
+  padding-bottom: 3rem;
+}
+.registration{
+  background-image: linear-gradient(-180deg,#ffffff,#6d6a6a);
+}
+.registration .box-footer button{
+  margin-top:3rem;
+  margin-bottom:3rem;
+  border-radius:10px;
+}
+
+
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Project</title>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        h1{
+            color:#b30000;
+            text-align:center;
+            font-family:'Times New Roman', Times, serif;
+            font-size:5rem;
+            font-weight:bold;
+            padding-bottom: 3rem;
+        }
+.maincontainer{
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.thecard{
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+
+ .thefront{
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  backface-visibility:hidden;
+  overflow:visible;
+  background:lightskyblue;
+  color: #000;
+}
+
+
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background:yellow;
+  color: #333;
+  
+  transform: rotateY(180deg);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-row-gap : 10%;
+  grid-column-gap:5%;
+  padding-left: 15%;
+  padding-bottom: 10%;
+}
+
+.theback li{
+    size:20px;
+    font-weight:900x;
+
+} 
+
+  </style>
+
+
+</head>
+<body>
+    <h1>Donor Eligibility</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+    <div class="mainconatiner">
+        <div class="thecard">
+            <div class="thefront">
+                <h2 style="text-align: center;">Age</h2>
+                <center><img src="Icons/e2.png"></center>
+            </div>
+            <div class="theback">
+                <ul style="list-style-type:circle; padding-top: 50px;">
+                <li>Donors must be atleast 16 years old to donate with parent consent</li>
+                <li>Minimum-18years</li>
+                <li>Maximum-65years</li>
+                <li>First time donor-not more than 60 years</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="grid-item">
+    <div class="mainconatiner">
+        <div class="thecard">
+            <div class="thefront">
+                <h2 style="text-align: center;">Healthy and Well</h2>
+                <center><img src="Icons/e3.png"></center>
+            </div>
+            <div class="theback">
+                <ul style="list-style-type:circle; padding-top: 50px;">
+                      <li>Donors must be in good health and feeling well.</li>
+                      <li>Free of colds,open,cuts,cold sore and infections.</li>      
+                      <li>You must not donate blood If you do not meet the minimum haemoglobin level for blood donation(not less than 12.0 g/dl for females and not less than 13.0 g/dl for males as the threshold).</li>
+                      <li>If you have visited the dentist for a minor procedure you must wait 24 hours before donating; for major work wait a month.</li>                   
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item">
+    <div class="mainconatiner">
+        <div class="thecard">
+            <div class="thefront">
+                <h2 style="text-align: center;">Weight</h2>
+                <center><img src="Icons/e4.png"></center>
+            </div>
+            <div class="theback">
+                <ul style="list-style-type:circle; padding-top: 50px;">
+                      <li>Donors 16years old must weight 120lbs (55kgs) and donors 17 years old and over must weight 110lbs(50 kgs)</li>
+                      <li>You weigh at least 50 kg.</li>
+                      <li>In some countries, donors of whole blood donations should weigh at least 45 kg to donate 350 ml ± 10%.</li>
+
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="grid-item">
+    <div class="mainconatiner">
+        <div class="thecard">
+            <div class="thefront">
+                <h2 style="text-align: center;">Eat Well</h2>
+                <center><img src="Icons/e5.png"></center>
+            </div>
+            <div class="theback">
+                <ul style="list-style-type:circle; padding-top: 50px;">
+                      <li>Eat a substantial meal 4 hours prior to donation</li>
+                      <li>Drink plenty of hydrating fluids (water/milk/juice) the day prior,day of and after donation.</li>              
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

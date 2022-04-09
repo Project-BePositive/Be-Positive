@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+.donation-container{
+    background-image: url(Icons/b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .donation-container .centertext {
+   width:900px;
+   margin: 10px auto;
+  }
+  
+  .donation-container .centertext h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(78, 70, 70);
+    font-family: 'Cinzel';
+    animation: textanimation 1s ease-in-out;
+  }
+  
+  @keyframes textanimation {
+    0% {
+        letter-spacing: 10px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+  }
+  
+  .donation-container .row{
+    width:1100px;
+  }
+  
