@@ -52,7 +52,7 @@ const DonorForm = () =>{
         }
         else
         {
-        const {name ,username,password, gender, age, bloodgroup, positivedate, negativedate, phone, state, city}= user;
+        const {name ,username,password, gender, age, bloodgroup, weight, phone, state, city}= user;
 
         const res=await fetch("http://localhost:5002/bepositive/createdonor", {
             method:"POST",
@@ -60,7 +60,7 @@ const DonorForm = () =>{
                 "Content-Type": "application/json"
             }, 
             body:JSON.stringify({
-                name ,username,password, gender, age, bloodgroup, positivedate, negativedate, phone, state, city
+                name ,username,password, gender, age, bloodgroup,weight, phone, state, city
             })
         });
 
