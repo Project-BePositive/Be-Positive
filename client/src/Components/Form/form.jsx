@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-//import './form.css';
-//import { Link, useHistory } from 'react-router-dom';
+import './form.css';
+import { Link, useHistory } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 const DonorForm = () =>{
-    //const history=useHistory();
+    const history=useHistory();
     const navigate=useNavigate();
     const [user,setUser] = useState({
         name:"",
@@ -73,7 +73,7 @@ const DonorForm = () =>{
         else
         {
             alert("Registration successful");
-            //history.push("getdonors");
+            history.push("getdonors");
             navigate('/getdonors');
         }
         }
