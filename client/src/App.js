@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from './Components/Navbar/NavBar.jsx';
-import DonorForm from './Components/Form/DonorForm/form';
-import DonorList from './Components/List/Donor/donor';
-import Login from './Components/List/Donor/login';
-import UpdateDonor from './Components/List/Donor/update';
+import DonorForm from './Components/Form/form';
+import DonorList from './Components/List/donor';
+import Login from './Components/List/login';
+import UpdateDonor from './Components/List/update';
 
 const App = () =>{
     return(
