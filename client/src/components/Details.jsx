@@ -7,6 +7,7 @@ const Details = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
+    aadhar: "",
     password: "",
     gender: "",
     age: "",
@@ -14,7 +15,8 @@ const Details = () => {
     bloodgroup: "",
     phno: "",
     state: "",
-    city: ""
+    city: "",
+    disease:""
   })
 
   const { id } = useParams("");
@@ -73,6 +75,7 @@ const Details = () => {
               <h6>Age : <span>{user.age}</span></h6>
               <h6>Gender : <span>{user.gender}</span></h6>
               <h6>Weight : <span>{user.weight}</span></h6>
+              <h6>Diseases : <span>{user.disease}</span></h6>
             </div>
             <div className="right-view col-lg-6">
               <h6>Blood Group : <span>{user.bloodgroup}</span></h6>
