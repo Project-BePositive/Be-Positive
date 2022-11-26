@@ -136,7 +136,7 @@ router.post("/sendmail/:id",async(req,res)=>{
         var mailOptions={
             from:'bepositiveplasmadonation@gmail.com',
             to: user.email,
-            subject:'Test',
+            subject:'Requirement for plasma donation',
             text: msg
         };
         
