@@ -11,6 +11,7 @@ import Details from './components/Details';
 import Contact from './components/Contact';
 import BloodTypes from './components/BloodTypes';
 import BloodBanks from './components/BloodBanks';
+import Email from './components/Email';
 import { BrowserRouter as Router,Routes, Route} from "react-router-dom";
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/contact/:id" element={<Contact/>} />
               <Route path="/register" element={<Register/>} />
               <Route path="/bloodbanks" element={<BloodBanks/>} />
+              <Route path="/email/:id" element={<Email/>}/>
           </Routes>
         </Router>
     </div>
