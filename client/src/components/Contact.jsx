@@ -7,6 +7,7 @@ const Details = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
+    aadhar:"",
     password: "",
     gender: "",
     age: "",
@@ -14,7 +15,8 @@ const Details = () => {
     bloodgroup: "",
     phno: "",
     state: "",
-    city: ""
+    city: "",
+    disease:""
   })
 
   const { id } = useParams("");
@@ -46,17 +48,18 @@ const Details = () => {
 
   return (
     <div className="details container mt-3">
-      <Card sx={{ maxWidth: 600 }}>
+      <Card sx={{ maxWidth: 700 }}>
         <CardContent>
           <h2 className='heading'>Donor Details:</h2>
           
           <div className="row">
-            <h6>Name : {user.name}</h6>
+            <h6>Name : <span>{user.name}</span></h6>
             <div className="left-view col-lg-6">
               <h6>Email : <span>{user.email}</span></h6>
               <h6>Age : <span>{user.age}</span></h6>
               <h6>Gender : <span>{user.gender}</span></h6>
               <h6>Weight : <span>{user.weight}</span></h6>
+              <h6>Disease : <span>{user.disease}</span></h6>
             </div>
             <div className="right-view col-lg-6">
               <h6>Blood Group : <span>{user.bloodgroup}</span></h6>
@@ -65,6 +68,7 @@ const Details = () => {
               <h6>State : <span>{user.state}</span></h6>
             </div>
           </div>
+          <Link to={`/email/${user._id}`}><button className="btn">Send Email</button></Link>
         </CardContent>
       </Card>
     </div>
